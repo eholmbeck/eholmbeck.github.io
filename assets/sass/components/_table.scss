@@ -25,11 +25,14 @@
 
 		td {
 			padding: 0.75rem 0.75rem;
+			font-family: _font(family-heading);
+			font-size: 0.4rem;
+			font-weight: _font(weight-heading);
 		}
 
 		th {
 			font-family: _font(family-heading);
-			font-size: 0.8rem;
+			font-size: 0.6rem;
 			font-weight: _font(weight-heading);
 			letter-spacing: 0.075em;
 			line-height: 1.5;
@@ -38,7 +41,7 @@
 			text-transform: uppercase;
 
 			@include breakpoint('<=medium') {
-				font-size: 0.9rem;
+				font-size: 0.7rem;
 			}
 		}
 
