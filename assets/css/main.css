@@ -3193,6 +3193,7 @@ input, select, textarea {
 	#wrapper {
 		-moz-transition: opacity 0.5s ease;
 		-webkit-transition: opacity 0.5s ease;
+		-webkit-transform: translateZ(0x);
 		-ms-transition: opacity 0.5s ease;
 		transition: opacity 0.5s ease;
 		position: relative;
@@ -3208,17 +3209,15 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-			background-size: auto,								auto,														100% auto;
-			background-position: top center,								top center,														top center;
-			background-repeat: repeat,								no-repeat,													no-repeat;
-			background-attachment: scroll,								scroll,														scroll;
-            -webkit-transform: translate3d(0,0,0);
+			background-size: auto, auto, 100% auto;
+			background-position: top center, top center, top center;
+			background-repeat: repeat, no-repeat, no-repeat; 
+			background-attachment:	scroll;
 			z-index: -1;
 		}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
-                -webkit-transform: translate3d(0,0,0);
 				width: 100vw;
 				height: 100vh;
 			}
@@ -3240,7 +3239,6 @@ input, select, textarea {
 			left: 0;
 			opacity: 0;
 			position: fixed;
-            -webkit-transform: translate3d(0,0,0);
 			top: 0;
 			width: 100%;
 		}
@@ -3252,7 +3250,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: auto,auto,auto 175%;
 			}
 
 		}

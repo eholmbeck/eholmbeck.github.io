@@ -84,7 +84,8 @@
 			};
 
 			// Disable parallax on ..
-				if (browser.name == 'ie'			// IE
+				if (true
+				||   browser.name == 'ie'			// IE
 				||	browser.name == 'edge'			// Edge
 				||	window.devicePixelRatio > 1		// Retina/HiDPI (= poor performance)
 				||	browser.mobile)					// Mobile devices
