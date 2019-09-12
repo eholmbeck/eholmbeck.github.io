@@ -3211,14 +3211,13 @@ input, select, textarea {
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
-			background-attachment: fixed,								fixed,														fixed;
+			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
 				width: 100vw;
-				height: 100vh;
 			}
 
 		#wrapper.fade-in:before {
